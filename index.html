@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | FacingSadness</title>
+    <title>Unity WebGL Player | Testing</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -22,19 +22,19 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">FacingSadness</div>
+        <div id="unity-build-title">Testing</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/FacingSadnessWebGLBuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/FacingSadnessWebGLBuild.data",
-        frameworkUrl: buildUrl + "/FacingSadnessWebGLBuild.framework.js",
-        codeUrl: buildUrl + "/FacingSadnessWebGLBuild.wasm",
+        dataUrl: buildUrl + "/FacingSadnessWebGLBuild.data.gz",
+        frameworkUrl: buildUrl + "/FacingSadnessWebGLBuild.framework.js.gz",
+        codeUrl: buildUrl + "/FacingSadnessWebGLBuild.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Reslience",
-        productName: "FacingSadness",
+        companyName: "DefaultCompany",
+        productName: "Testing",
         productVersion: "0.1",
       };
 
@@ -54,7 +54,7 @@
         }, 5000);
       } else {
         canvas.style.width = "960px";
-        canvas.style.height = "540px";
+        canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
 
